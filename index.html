@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emotion Grid</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .tile {
+        transition: all 0.3s ease;
+      }
+      .tile:hover {
+        box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+        z-index: 10;
+      }
+      html {
+        scroll-behavior: smooth;
+    }
+    </style>
+  </head>
+  <body class="bg-black h-screen w-screen md:overflow-hidden">
+    <div class="grid grid-cols-5 grid-rows-4 h-full w-full">
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-yellow-300 to-yellow-500 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#happiness" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😊 Happiness</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-blue-400 to-blue-600 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#sadness" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😢 Sadness</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-gray-700 to-black text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#fear" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😨 Fear</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-red-500 to-red-800 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#anger" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😡 Anger</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-orange-400 to-orange-600 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#surprise" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😲 Surprise</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-green-600 to-green-800 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#disgust" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">🤢 Disgust</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-pink-400 to-pink-600 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#love" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😍 Love</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-cyan-400 to-cyan-600 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#trust" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">🤝 Trust</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-yellow-400 to-yellow-600 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#anticipation" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">🤩 Anticipation</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-gray-500 to-gray-700 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#shame" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😳 Shame</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-blue-700 to-blue-900 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#confidence" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">💪 Confidence</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-red-700 to-red-900 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#guilt" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😔 Guilt</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-yellow-200 to-yellow-400 text-gray-900 font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#gratitude" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">🙏 Gratitude</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-green-800 to-green-900 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#jealousy" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😒 Jealousy</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-purple-600 to-purple-800 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#pride" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">🏆 Pride</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-yellow-100 to-yellow-300 text-gray-900 font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#hope" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">🌅 Hope</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-slate-400 to-slate-600 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#loneliness" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😞 Loneliness</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-yellow-100 to-yellow-300 text-gray-800 font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#boredom" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😐 Boredom</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-pink-200 to-pink-400 text-gray-900 font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#embarrassment" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😳 Embarrassment</a>
+            </div>
+            <div class="tile group flex items-center justify-center bg-gradient-to-br from-blue-200 to-blue-400 text-white font-semibold hover:col-span-2 hover:row-span-2">
+              <a href="#calm" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">🧘 Calm</a>
+            </div>
+          </div>
+          
+    </div>
+    <div class="overflow-y-auto h-screen snap-y snap-mandatory">
+        <section class="min-h-screen w-full bg-yellow-400 flex flex-col justify-center items-center p-6 snap-start" id="happiness">
+          <h1 class="text-3xl font-bold text-black mb-4">Why are you feeling 😊 Happiness?</h1>
+          <textarea class="w-3/4 h-32 bg-yellow-200 p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-yellow-600"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-blue-400 flex flex-col justify-center items-center p-6 snap-start" id="sadness">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 😢 Sadness?</h1>
+          <textarea class="w-3/4 h-32 bg-blue-200 text-black p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-blue-600"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-gray-500 flex flex-col justify-center items-center p-6 snap-start" id="fear">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 😨 Fear?</h1>
+          <textarea class="w-3/4 h-32 bg-gray-300 text-black p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-gray-700"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-red-500 flex flex-col justify-center items-center p-6 snap-start" id="anger">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 😡 Anger?</h1>
+          <textarea class="w-3/4 h-32 bg-red-200 p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-red-700"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-orange-400 flex flex-col justify-center items-center p-6 snap-start" id="surprise">
+          <h1 class="text-3xl font-bold text-black mb-4">Why are you feeling 😲 Surprise?</h1>
+          <textarea class="w-3/4 h-32 bg-orange-200 p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-orange-600"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-green-700 flex flex-col justify-center items-center p-6 snap-start" id="disgust">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 🤢 Disgust?</h1>
+          <textarea class="w-3/4 h-32 bg-green-200 text-black p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-green-900"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-pink-500 flex flex-col justify-center items-center p-6 snap-start" id="love">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 😍 Love?</h1>
+          <textarea class="w-3/4 h-32 bg-pink-200 p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-pink-700"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-cyan-500 flex flex-col justify-center items-center p-6 snap-start" id="trust">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 🤝 Trust?</h1>
+          <textarea class="w-3/4 h-32 bg-cyan-200 text-black p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-cyan-700"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-yellow-300 flex flex-col justify-center items-center p-6 snap-start" id="anticipation">
+          <h1 class="text-3xl font-bold text-black mb-4">Why are you feeling 🤩 Anticipation?</h1>
+          <textarea class="w-3/4 h-32 bg-yellow-100 p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-yellow-500"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-gray-400 flex flex-col justify-center items-center p-6 snap-start" id="shame">
+          <h1 class="text-3xl font-bold text-black mb-4">Why are you feeling 😳 Shame?</h1>
+          <textarea class="w-3/4 h-32 bg-gray-200 p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-gray-600"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-blue-800 flex flex-col justify-center items-center p-6 snap-start" id="confidence">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 💪 Confidence?</h1>
+          <textarea class="w-3/4 h-32 bg-blue-300 text-black p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-blue-900"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-red-700 flex flex-col justify-center items-center p-6 snap-start" id="guilt">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 😔 Guilt?</h1>
+          <textarea class="w-3/4 h-32 bg-red-200 p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-red-900"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-yellow-200 flex flex-col justify-center items-center p-6 snap-start" id="gratitude">
+          <h1 class="text-3xl font-bold text-black mb-4">Why are you feeling 🙏 Gratitude?</h1>
+          <textarea class="w-3/4 h-32 bg-yellow-100 p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-yellow-400"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-green-900 flex flex-col justify-center items-center p-6 snap-start" id="jealousy">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 😒 Jealousy?</h1>
+          <textarea class="w-3/4 h-32 bg-green-200 text-black p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-green-800"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-purple-600 flex flex-col justify-center items-center p-6 snap-start" id="pride">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 🏆 Pride?</h1>
+          <textarea class="w-3/4 h-32 bg-purple-300 text-black p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-purple-800"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-yellow-100 flex flex-col justify-center items-center p-6 snap-start" id="hope">
+          <h1 class="text-3xl font-bold text-black mb-4">Why are you feeling 🌅 Hope?</h1>
+          <textarea class="w-3/4 h-32 bg-yellow-50 p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-yellow-300"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-slate-500 flex flex-col justify-center items-center p-6 snap-start" id="loneliness">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 😞 Loneliness?</h1>
+          <textarea class="w-3/4 h-32 bg-slate-300 text-black p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-slate-700"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-yellow-300 flex flex-col justify-center items-center p-6 snap-start" id="boredom">
+          <h1 class="text-3xl font-bold text-black mb-4">Why are you feeling 😐 Boredom?</h1>
+          <textarea class="w-3/4 h-32 bg-yellow-100 p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-yellow-400"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-pink-400 flex flex-col justify-center items-center p-6 snap-start" id="embarrassment">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 😳 Embarrassment?</h1>
+          <textarea class="w-3/4 h-32 bg-pink-200 text-black p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-pink-600"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      
+        <section class="min-h-screen w-full bg-blue-400 flex flex-col justify-center items-center p-6 snap-start" id="calm">
+          <h1 class="text-3xl font-bold text-white mb-4">Why are you feeling 🧘 Calm?</h1>
+          <textarea class="w-3/4 h-32 bg-blue-200 text-black p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-blue-600"></textarea>
+        <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
+        </section>
+      </div>
+      <script>
+        const buttons = document.querySelectorAll('.button');
+        const textareas = document.querySelectorAll('textarea');
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+            alert('Thank you for your submission!');
+            textareas.forEach(textarea => {
+              textarea.value = '';
+            });
+            window.scrollTo(0, 0);
+            document.querySelector('.grid').scrollIntoView({ behavior: 'smooth' });
+          });
+        });
+      </script>
+  </body>
+</html>
