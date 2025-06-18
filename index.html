@@ -22,7 +22,14 @@
     </style>
   </head>
   <body class="bg-black h-screen w-screen md:overflow-hidden">
-    <div class="grid grid-cols-5 grid-rows-4 h-full w-full">
+    <header class="flex bg-gray-800 text-white p-4 fixed top-0 w-full z-10">
+      <h1 class="text-2xl font-bold text-center"><a href="#emotions">Emotion Grid</a></h1>
+      <nav class="ml-auto flex space-x-4">
+        <a href="#why">Why?</a>
+        <a href="#feedback">Feedback</a>
+      </nav>
+    </header>
+    <div class="grid grid-cols-5 grid-rows-4 h-screen w-full" id="emotions">
             <div class="tile group flex items-center justify-center bg-gradient-to-br from-yellow-300 to-yellow-500 text-white font-semibold hover:col-span-2 hover:row-span-2">
               <a href="#happiness" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">😊 Happiness</a>
             </div>
@@ -84,8 +91,13 @@
               <a href="#calm" class="font-extrabold opacity-0 group-hover:opacity-100 transition duration-300">🧘 Calm</a>
             </div>
           </div>
-          
     </div>
+    <footer>
+      <div class="bg-gray-800 text-white text-center p-4 fixed bottom-0 w-full">
+        <p class="text-sm">© 2025 Emotion Grid. All rights reserved.</p>
+        <p class="text-xs">Created with ❤️ by Abhay</p>
+      </div>
+    </footer>
     <div class="overflow-y-auto h-screen snap-y snap-mandatory">
         <section class="min-h-screen w-full bg-yellow-400 flex flex-col justify-center items-center p-6 snap-start" id="happiness">
           <h1 class="text-3xl font-bold text-black mb-4">Why are you feeling 😊 Happiness?</h1>
@@ -207,12 +219,27 @@
         <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit</button>
         </section>
       </div>
+      <section id="why">
+        <div class="min-h-screen w-full bg-gray-800 flex flex-col justify-center items-center p-6">
+          <h1 class="text-3xl font-bold text-white mb-4">Why?</h1>
+          <p class="text-lg text-gray-300 mb-6">This grid is designed to help you reflect on your emotions. Click on any emotion tile to share your feelings and understand them better.</p>
+          <p class="text-sm text-gray-400">Your submissions don't go anywhere, they stay there, just invisible to make the happy feel more happy and the sad a bit less sad, Why? Because I believe writing down your emotions helps you manage the emotion more efficiently.</p>
+        </div>
+      </section>
+      <section id="feedback"></section>
+        <div class="min-h-screen w-full bg-gray-900 flex flex-col justify-center items-center p-6">
+          <h1 class="text-3xl font-bold text-white mb-4">Feedback</h1>
+          <p class="text-lg text-gray-300 mb-6">We value your feedback to improve this experience. Please share your thoughts below:</p>
+          <textarea class="w-3/4 h-32 bg-gray-700 text-white p-4 rounded-lg resize-none focus:outline-none focus:ring-4 focus:ring-gray-500"></textarea>
+          <button class="p-4 rounded-full border-2 border-solid m-10 border-fuchsia-500 text-white hover:bg-blue-400 button">Submit Feedback</button>
+        </div>
+      </section>
       <script>
         const buttons = document.querySelectorAll('.button');
         const textareas = document.querySelectorAll('textarea');
         buttons.forEach(button => {
           button.addEventListener('click', () => {
-            alert('Thank you for your submission!');
+            alert('Thank you for your time here!');
             textareas.forEach(textarea => {
               textarea.value = '';
             });
@@ -220,6 +247,10 @@
             document.querySelector('.grid').scrollIntoView({ behavior: 'smooth' });
           });
         });
+        document.onload = function() {
+          window.scrollTo(0, 0);
+        };
+        
       </script>
   </body>
 </html>
